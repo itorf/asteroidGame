@@ -5,6 +5,21 @@
 		<script src=""></script>
 	</head>
 	<body id="index" onload="">
+		<canvas id="game-canvas" width="600" height="600"></canvas>
 		
+		<script>
+			var canvasEl = document.getElementById("game-canvas")[0];
+			var ctx = canvasEl.getContext("2d");
+			
+			// make Game obj
+			var game = new Game();
+			
+			// make GameView obj
+			var gameView = new GameView(game, ctx);
+			
+			// call GameView#start
+			gameView.start();
+			
+		</script>
 	</body>
 </html>
