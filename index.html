@@ -13,16 +13,25 @@
 		<link rel="stylesheet" href="asteroid.css">
 	</head>
 	<body>
-		<canvas id="game-canvas" background-color="#000000"></canvas>
+		<canvas id="game-canvas"></canvas>
+		
+		<div id="stats">
+				<div id="score">Score: </div>
+				<div id="accuracy">Accuracy: </div>
+		</div>
+		
 		
 		<script>
 			var canvasEl = document.getElementById("game-canvas");
-			canvasEl.width = window.innerWidth - 10;
-			canvasEl.height = window.innerHeight - 10;
+			canvasEl.width = window.innerWidth - 200;
+			canvasEl.height = window.innerHeight - 100;
 			var ctx = canvasEl.getContext("2d");
 			
 			// make Game obj
-			var game = new Asteroids.Game(window.innerHeight, window.innerWidth);
+			var game = new Asteroids.Game(
+				window.innerHeight - 100, 
+				window.innerWidth - 200
+			);
 			
 			// make GameView obj
 			var gameView = new Asteroids.GameView(game, ctx);

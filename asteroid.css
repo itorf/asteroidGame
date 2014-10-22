@@ -21,6 +21,31 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+body {
+	background-color: #334033;
+}
+
 #game-canvas {
-	margin: 0 ;
+	position: absolute;
+	right: 100px;
+	top: 50px;
+	background-image: url('space.jpg');
+}
+
+#stats {
+	margin: 0 auto;
+	width: 10%;
+	color: white;
+}
+
+#score {
+	position: absolute;
+	left: 100px;
+	top: 30px;
+}
+
+#accuracy {
+	position: absolute;
+	right: 120px;
+	top: 30px;
 }
