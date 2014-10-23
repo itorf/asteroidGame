@@ -51,10 +51,30 @@ body {
 	top: 30px;
 }
 
-#over {
+.over {
 	color: white;
 	position: absolute;
-	left: 45%;
+	left: 48%;
 	top: 40%;
-	
+}
+
+.over#final_stats {
+	top: 45%;
+	left: 45%;
+}
+
+.over#play_again{
+	left: 45%;
+	top: 50%;
+}
+
+li {
+	list-style: none;
+}
+
+#instructions {
+	color: white;
+	position: absolute;
+	left: 30%;
+	top: 40%;
 }

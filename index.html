@@ -16,7 +16,13 @@
 		<canvas id="game-canvas">
 		</canvas>
 		
-		<div id="over"></div>
+		<div id="instructions">
+			Use directional keys to move. Spacebar to shoot. Press 'enter' to play.
+		</div>
+		<div id="over" class="over"></div>
+	</br>
+		<div id="final_stats" class="over"></div>
+		<div id="play_again" class="over"></div>
 		<div id="stats">
 				<div id="score">Score: </div>
 				<div id="accuracy">Accuracy: </div>
@@ -39,7 +45,12 @@
 			var gameView = new Asteroids.GameView(game, ctx);
 			
 			// call GameView#start
-			gameView.start();
+			document.onkeypress = function (event) {
+				if (event.keyCode === 13){
+					document.getElementById('instructions').innerHTML = "";
+					gameView.start();
+				}
+			};
 			
 		</script>
 	</body>
