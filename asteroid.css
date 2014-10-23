@@ -30,6 +30,7 @@ body {
 	right: 100px;
 	top: 50px;
 	background-image: url('space.jpg');
+	z-index: -1;
 }
 
 #stats {
@@ -48,4 +49,12 @@ body {
 	position: absolute;
 	right: 120px;
 	top: 30px;
+}
+
+#over {
+	color: white;
+	position: absolute;
+	left: 45%;
+	top: 40%;
+	
 }
