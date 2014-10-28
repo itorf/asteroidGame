@@ -25,6 +25,14 @@ body {
 	background-color: #334033;
 }
 
+h1 {
+	color: white;
+	margin: 1% auto;
+	width: 15%;
+	font-size: 250%;
+	
+}
+
 #game-canvas {
 	position: absolute;
 	right: 100px;
@@ -75,6 +83,6 @@ li {
 #instructions {
 	color: white;
 	position: absolute;
-	left: 30%;
+	left: 40%;
 	top: 40%;
 }
